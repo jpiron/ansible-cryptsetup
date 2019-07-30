@@ -2,9 +2,9 @@
 
 dependencies:
 
-  - role: debops.secret
-    tags: [ 'depend::secret', 'depend::secret:cryptsetup',
-            'depend-of::cryptsetup', 'type::dependency:hard' ]
+  - src: git+https://github.com/jpiron/debops.secret.git
+    name: debops.secret
+    version: 'd8a588da3393f705258a5986d1712627e71807bb'
 
 galaxy_info:
 
